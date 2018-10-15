@@ -8,6 +8,16 @@
         <link rel="stylesheet" type="text/css" href="mystyle.css">
 
         <title>CALCULATOR</title>
+       <script type="text/javascript">
+          
+             function myfun(y){
+
+              var x=eval(calc.display.value);
+              calc.display.value=Math.pow(x,y);
+             }
+
+        </script>
+
     </head>
 
     <body>
@@ -29,8 +39,12 @@
            <input type=button value="x" OnClick="calc.display.value+='*'"><br/>
            <input type=button value="C" OnClick="calc.display.value=''">
            <input type=button value="0" OnClick="calc.display.value+='0'">
-           <input type=button value="=" OnClick="calc.display.value=eval(calc.display.value)">
-           <input type=button value="&divide;" OnClick="calc.display.value+='/'">
+            <input type=button value="=" OnClick="calc.display.value=eval(calc.display.value)">
+           <input type=button value="&#247;" OnClick="calc.display.value+='/'"><br>
+           <input type=button value="Del" OnClick="calc.display.value=calc.display.value.slice(0,-1)">
+           <input type=button value="." OnClick="calc.display.value+='.'">
+           <input type=button value="x²" OnClick="myfun(2)">
+           <input type=button value="x³" OnClick="myfun(3)">
         </form>
     </body>
 </html>
