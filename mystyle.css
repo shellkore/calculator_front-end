@@ -1,33 +1,53 @@
 input {
     width: 150px;
-    height: 100px;
+    height: 90px;
     font-size: 75px;
-    border-radius: 30px;
+    border-radius: 30px 90px;
     margin: 10px;
     background-color: #000;
     color: #fff;
-    border-style: none;
 }
 
+body{
+    background-color: #101010;
+    margin-bottom: 0px;
+}
+
+#maindiv{
+ 
+}
 #myform {
     margin-left: 24%;
     background-color: #919490;
-    width:53%;
-    /*border: medium solid purple;*/
+    width:56%;
+    border-radius: 40px 90px;
+    margin-top: 0px;
+
+    /*! border: medium solid purple; */
 }
 
 h1{
     text-align: center;
     font-size: 80px;
     margin-right: 150px;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     background-color: #97A6CF;
     width:100%;
+    border-radius: 90px 30px;
+}
+
+input:hover{
+    opacity: 0.5;
+}
+input:active{
+    background-color:#4867AA; 
 }
 
 #disp{
-width: 675px;
-height: 100px;
+width: 95%;
+height: 100%;
 text-align: center;
 background-color: #4867AA;
 }
+
